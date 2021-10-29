@@ -1,6 +1,6 @@
 .PHONY: all
 all:
-    @echo "Starting make"
-    @go fmt ./...
-    @go mod tidy
-    @go install -v
+	@echo "Starting make"
+	@go fmt ./...
+	@go mod tidy
+	@go install -v
