@@ -3,4 +3,4 @@ all:
 	@echo "Starting make"
 	@go fmt ./...
 	@go mod tidy
-	@go install -v
+	@go install -v cmd/rs
