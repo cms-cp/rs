@@ -7,6 +7,7 @@ import (
 
 	"github.com/arsmn/fiber-swagger/v2"
 	"github.com/gofiber/fiber/v2"
+	"github.com/dustin/go-humanize"
 )
 
 type (
@@ -42,6 +43,7 @@ func NewCore() Core {
 	c.log.SetOutput(f)
 
 	c.log.Print(os.Getwd())
+	c.log.Print(humanize.Bytes(82854982))
 
 	c.app = fiber.New()
 
