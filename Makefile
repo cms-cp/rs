@@ -1,6 +1,6 @@
 .PHONY: all
 all:
 	@echo "Starting make"
-	@go fmt ./...
 	@go mod tidy
-	@go install -v ./cmd/rs
+	@go fmt ./...
+	@go install -v -ldflags="-s -w" ./cmd/rs
